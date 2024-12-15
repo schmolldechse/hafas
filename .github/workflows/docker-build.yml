@@ -32,5 +32,5 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
 
         - name: push docker image
-          run: docker tag hafas-rest:latest schmolldechse/hafas-rest:latest
-        - run: docker push schmolldechse/hafas-rest:latest
+          run: docker tag hafas-rest:latest {{ secrets.DOCKER_USERNAME }}/hafas-rest:latest
+        - run: docker push {{ secrets.DOCKER_USERNAME }}/hafas-rest:latest
