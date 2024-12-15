@@ -1,0 +1,27 @@
+services:
+    hafas-client:
+        container_name: hafas-client
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        ports:
+            - "3000:3000"
+        networks:
+            - hafas-network
+
+    nginx:
+        container_name: nginx
+        image: nginx:latest
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./certs:/etc/nginx/certs
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+        networks:
+            - hafas-network
+
+networks:
+    hafas-network:
+        driver: bridge

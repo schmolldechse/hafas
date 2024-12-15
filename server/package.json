@@ -1,0 +1,16 @@
+{
+	"name": "hafas-rest",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node ."
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"hafas-client": "^6.3.2",
+		"hafas-rest-api": "^5.1.3"
+	}
+}
