@@ -1,9 +1,7 @@
 services:
     hafas-client:
         container_name: hafas-client
-        build:
-            context: .
-            dockerfile: Dockerfile
+        image: schmolldechsee/hafas-rest:latest
         restart: always
         ports:
             - "3000:3000"
