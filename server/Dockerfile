@@ -3,10 +3,8 @@ FROM node:latest
 # set the workdir
 WORKDIR /usr/src/hafas-rest
 
-COPY server/package*.json ./
+COPY . .
 RUN npm install
-
-COPY server/ .
 
 CMD [ "npm", "run", "dev" ]
 
