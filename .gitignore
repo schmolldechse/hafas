@@ -1,6 +1,3 @@
-# ignore certs
-certs/
-
 # ignore node_modules
 */node_modules/
 
