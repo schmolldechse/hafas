@@ -1,6 +1,6 @@
 services:
-    hafas-client:
-        container_name: hafas-client
+    hafas-rest:
+        container_name: hafas-rest
         image: schmolldechsee/hafas-rest:latest
         restart: always
         ports:

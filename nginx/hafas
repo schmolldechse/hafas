@@ -19,7 +19,7 @@ server {
     ssl_prefer_server_ciphers on;
 
     location / {
-        proxy_pass http://hafas-client:3000;            # Adjust the ip of the hafas-client here
+        proxy_pass http://hafas-rest:3000;            # Adjust the ip of the hafas-client here
         proxy_http_version 1.1;
 
         proxy_set_header Upgrade $http_upgrade;
