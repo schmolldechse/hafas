@@ -6,7 +6,7 @@ const config = {
     hostname: "voldechse.wtf",
     name: "Hafas-REST-API",
     version: "1.0.0",
-    cors: false,
+    cors: true,
     aboutPage: false
 }
 
