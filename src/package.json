@@ -10,7 +10,8 @@
 	"license": "ISC",
 	"description": "",
 	"dependencies": {
-		"hafas-client": "^6.3.2",
+		"@public-transport/db-vendo-client": "git+https://github.com/public-transport/db-vendo-client.git",
+		"db-hafas-stations": "^1.0.0",
 		"hafas-rest-api": "^5.1.3"
 	}
 }
