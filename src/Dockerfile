@@ -1,7 +1,6 @@
 FROM node:18-alpine
 
-# set the workdir
-WORKDIR /usr/src/hafas-rest
+WORKDIR /app
 
 COPY . .
 RUN npm install
