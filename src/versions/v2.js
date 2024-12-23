@@ -3,11 +3,11 @@ import {createClient} from "@public-transport/db-vendo-client";
 import {createHafasRestApi} from "hafas-rest-api";
 
 const config = {
-    hostname: "hafas.v2.voldechse.wtf",
+    hostname: "hafas-v2.voldechse.wtf",
     port: 15100,
     name: "Hafas-REST",
-    homePage: "https://hafas.v2.voldechse.wtf",
-    version: "1.0.0",
+    homePage: "https://hafas-v2.voldechse.wtf",
+    version: "2.0.0",
     openapiSpec: true,
     aboutPage: false
 }

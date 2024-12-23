@@ -3,10 +3,10 @@ import {createClient} from "hafas-client";
 import {createHafasRestApi} from "hafas-rest-api";
 
 const config = {
-    hostname: "hafas.v1.voldechse.wtf",
+    hostname: "hafas-v1.voldechse.wtf",
     port: 15000,
     name: "Hafas-REST",
-    homePage: "https://hafas.v1.voldechse.wtf",
+    homePage: "https://hafas-v1.voldechse.wtf",
     version: "1.0.0",
     openapiSpec: true,
     aboutPage: false
