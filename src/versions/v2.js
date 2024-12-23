@@ -9,7 +9,8 @@ const config = {
     homePage: "https://hafas-v2.voldechse.wtf",
     version: "2.0.0",
     openapiSpec: true,
-    aboutPage: false
+    aboutPage: false,
+    cors: true
 }
 
 const hafas = createClient(dbProfile, "wtf.HAFAS-REST", config);
