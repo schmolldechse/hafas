@@ -1,21 +1,5 @@
-import {createHafasRestApi} from "hafas-rest-api";
-import {profile as dbProfile} from "@public-transport/db-vendo-client/p/db/index.js";
-import {createClient} from "@public-transport/db-vendo-client";
+import ("./versions/v1.js").then(() => console.log("Started v1"))
+    .catch((err) => console.log("Error starting v1:", err));
 
-const config = {
-    hostname: "voldechse.wtf",
-    port: 3000,
-    name: "Hafas-REST",
-    homePage: "https://hafas.voldechse.wtf",
-    version: "1.0.0",
-    openapiSpec: true,
-    aboutPage: false
-}
-
-const hafas = createClient(dbProfile, "wtf.HAFAS-REST", config);
-const api = await createHafasRestApi(hafas, config);
-
-api.listen(config.port, (err) => {
-    console.log(`REST API is listening on ${config.port}`);
-    if (err) console.log(err);
-});
+import ("./versions/v2.js").then(() => console.log("Started v2"))
+    .catch((err) => console.log("Error starting v2:", err));

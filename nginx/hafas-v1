@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name hafas.voldechse.wtf;
+    server_name hafas-v1.voldechse.wtf;
     return 301 https://$host$request_uri;
 }
 
@@ -10,7 +10,7 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
 
-    server_name hafas.voldechse.wtf;
+    server_name hafas-v1.voldechse.wtf;
 
     ssl_certificate /etc/nginx/certs/cert.pem;
     ssl_certificate_key /etc/nginx/certs/key.pem;
@@ -19,7 +19,7 @@ server {
     ssl_prefer_server_ciphers on;
 
     location / {
-        proxy_pass http://hafas-rest:3000;            # Adjust the ip of the hafas-client here
+        proxy_pass http://hafas-rest:15000;            # Adjust the ip of the hafas-client here
         proxy_http_version 1.1;
 
         proxy_set_header Upgrade $http_upgrade;

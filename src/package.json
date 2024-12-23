@@ -1,16 +1,17 @@
 {
-	"name": "hafas-rest",
-	"version": "1.0.0",
-	"main": "index.js",
-	"type": "module",
-	"scripts": {
-		"dev": "node ."
-	},
-	"author": "",
-	"license": "ISC",
-	"description": "",
-	"dependencies": {
-		"@public-transport/db-vendo-client": "git+https://github.com/public-transport/db-vendo-client.git",
-		"hafas-rest-api": "^5.1.3"
-	}
+    "name": "hafas-rest",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node ."
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@public-transport/db-vendo-client": "git+https://github.com/public-transport/db-vendo-client.git",
+        "hafas-client": "^6.3.3",
+        "hafas-rest-api": "^5.1.3"
+    }
 }

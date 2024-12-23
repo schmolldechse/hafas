@@ -4,7 +4,8 @@ services:
         image: schmolldechsee/hafas-rest:latest
         restart: always
         ports:
-            - "3000:3000"
+            - "15000:15000"
+            - "15100:15100"
         networks:
             - hafas-network
 

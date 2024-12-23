@@ -9,4 +9,4 @@ RUN npm install
 
 CMD [ "npm", "run", "dev" ]
 
-EXPOSE 3000
+EXPOSE 15000 15100
