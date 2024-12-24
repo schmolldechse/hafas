@@ -11,7 +11,6 @@
     "description": "",
     "dependencies": {
         "@public-transport/db-vendo-client": "git+https://github.com/public-transport/db-vendo-client.git",
-        "cors": "^2.8.5",
         "hafas-client": "^6.3.3",
         "hafas-rest-api": "^5.1.3"
     }

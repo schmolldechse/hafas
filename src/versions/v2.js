@@ -15,10 +15,6 @@ const config = {
 const hafas = createClient(dbProfile, "HAFAS REST v2", config);
 const api = await createHafasRestApi(hafas, config);
 
-api.use((req, res, next) => {
-    res.on('finish', () => console.log('(v2) CORS headers:', res.getHeaders()['access-control-allow-origin']));
-    next();
-});
 api.listen(config.port, (err) => {
     console.log(`REST API (v2) is listening on ${config.port}`);
     if (err) console.log(err);
